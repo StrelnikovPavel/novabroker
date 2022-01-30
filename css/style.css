@@ -2140,10 +2140,26 @@ textarea.input {
 .insurance__content *:last-child {
   margin: 0px 0px 0px 0px;
 }
+@media (max-width: 90em) and (min-width: 94.25em) {
+  .insurance__content {
+    max-width: 43.75rem;
+  }
+}
+@media (max-width: 90em) and (min-width: 20em) and (max-width: 94.25em) {
+  .insurance__content {
+    max-width: calc(18.75rem + 25 * (((100vw - 20rem)) / ((74.25))));
+  }
+}
+@media (max-width: 90em) and (max-width: 20em) {
+  .insurance__content {
+    max-width: 18.75rem;
+  }
+}
 @media (max-width: 61.99875em) {
   .insurance__content {
     padding: 0px 10px;
     margin-right: 0;
+    max-width: none;
   }
 }
 .insurance__title {
